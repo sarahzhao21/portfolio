@@ -49,6 +49,7 @@ header p{
   font-size: 24px;
   padding: 0 100px;
   text-align: center;
+  overflow: hidden;
 }
 
 
@@ -209,6 +210,22 @@ nav a:hover {
 
   .one-image, .three-image{
     grid-column: 3/6;
+  }
+
+  .one, .one-image{
+    grid-row: 1/2;
+  }
+  
+  .two, .two-image{
+    grid-row: 2/3;
+  }
+  
+  .three, .three-image{
+    grid-row: 3/4;
+  }
+  
+  .four, .four-image{
+    grid-row: 4/5;
   }
 }
 
