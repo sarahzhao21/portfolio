@@ -177,7 +177,7 @@ img{
   /*min-width: 1000px;*/
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
 }
 
 .gallery > img{
