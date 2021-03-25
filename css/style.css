@@ -71,6 +71,11 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.active-page{
+  background-color:yellow;
+  font-style: italic;
+}
+
 .skip a{
   background: white;
   left: 0;
