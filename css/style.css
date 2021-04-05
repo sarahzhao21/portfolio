@@ -189,7 +189,7 @@ img{
 .gallery > img{
   border: 10px #ddaf2f solid;
   margin: 5px;
-  width: 600px;
+  width: 90%;
 }
 
 
@@ -356,7 +356,7 @@ img{
   
   .gallery{
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
   }
   
