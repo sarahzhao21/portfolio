@@ -5,9 +5,10 @@ html{
 
 body{
   background-color: rgb(176, 186, 209, 1);
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
