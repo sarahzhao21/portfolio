@@ -297,6 +297,24 @@ img{
   grid-column:1/2;
 }
 
+.three_img{
+  /*Your code here.*/
+ animation-name: image_show;
+ animation-duration: 5s;
+}
+
+@-webkit-keyframes image_show{
+  from {opacity: 0;}
+  to {opacity: 1;}
+  /*Your code here.*/
+}
+
+@keyframes image_show{
+  from {opacity: 0;}
+  to {opacity: 1;}
+  /*Your code here.*/
+} 
+
 
 @media all and (min-width: 600px){
   img{
@@ -538,28 +556,52 @@ img{
   }
 }
 
-.three_img >img{
-  /*Your code here.*/
- animation-name: image_show;
- animation-duration: 5s;
-
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  margin-left: 700px;
+  /*perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-@-webkit-keyframes image_show{
-  from {opacity: 0;}
-  to {opacity: 1;}
-  /*Your code here.*/
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-@keyframes image_show{
-  from {opacity: 0;}
-  to {opacity: 1;}
-  /*Your code here.*/
-} 
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: steelblue;
+  color: yellow;
+  transform: rotateY(180deg);
+}
 
 @media screen and (prefers-reduced-motion: reduce){
-  .three_img >img{
+  .three_img {
     animation-name: none;
   }
-  
 }
